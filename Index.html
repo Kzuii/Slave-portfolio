@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImASlavetoModeling - Roblox Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-button.active {
+            color: #60A5FA;
+            border-bottom: 2px solid #60A5FA;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+    <header class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-2">ImASlavetoModeling</h1>
+            <p class="text-gray-400">Roblox 3D Modeler & VFX Artist</p>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 border-b border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-4">
+                <button class="tab-button active flex items-center space-x-2 px-4 py-3 font-medium text-gray-400 hover:text-gray-200" data-tab="games">
+                    <span>Games</span>
+                </button>
+                <button class="tab-button flex items-center space-x-2 px-4 py-3 font-medium text-gray-400 hover:text-gray-200" data-tab="models">
+                    <span>Models</span>
+                </button>
+                <button class="tab-button flex items-center space-x-2 px-4 py-3 font-medium text-gray-400 hover:text-gray-200" data-tab="vfx">
+                    <span>VFX</span>
+                </button>
+                <button class="tab-button flex items-center space-x-2 px-4 py-3 font-medium text-gray-400 hover:text-gray-200" data-tab="workflow">
+                    <span>Workflow</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Games Tab -->
+        <div id="games" class="tab-content active">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2">Coin Breaker</h3>
+                    <p class="text-gray-400 mb-4">A simulator-style game featuring progressive areas and pet collection mechanics.</p>
+                    <div class="bg-gray-900 rounded p-4 mb-4">
+                        <h4 class="text-blue-400 font-medium mb-2">My Contribution:</h4>
+                        <p class="text-gray-300 mb-1">• Created detailed map environments</p>
+                        <p class="text-gray-300 mb-1">• Implemented pet system mechanics</p>
+                        <p class="text-gray-300 mb-1">• Developed coin breaking mechanics</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.roblox.com/games/98277853391947/Coin-Breaker" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            View Game →
+                        </a>
+                        <span class="text-gray-400">50K+ visits</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2">Energy Assault FPS</h3>
+                    <p class="text-gray-400 mb-4">Fast-paced FPS game with futuristic weapons and credit-based progression system.</p>
+                    <div class="bg-gray-900 rounded p-4 mb-4">
+                        <h4 class="text-blue-400 font-medium mb-2">My Contribution:</h4>
+                        <p class="text-gray-300 mb-1">• Designed weapon models</p>
+                        <p class="text-gray-300 mb-1">• Created reload animations</p>
+                        <p class="text-gray-300 mb-1">• Developed prop assets</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.roblox.com/games/6172932937/Energy-Assault-FPS" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            View Game →
+                        </a>
+                        <span class="text-gray-400">100K+ visits</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Models Tab -->
+        <div id="models" class="tab-content">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Japanese Temple" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Japanese Temple Complex</h3>
+                        <p class="text-gray-400 text-sm">Traditional architecture with detailed texturing</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Modern Building" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Modern Office Building</h3>
+                        <p class="text-gray-400 text-sm">Contemporary design with glass facades</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Island Environment" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Tropical Island Environment</h3>
+                        <p class="text-gray-400 text-sm">Complete environment with beach details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VFX Tab -->
+        <div id="vfx" class="tab-content">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Energy Effects" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Energy Burst Effect</h3>
+                        <p class="text-gray-400 text-sm">Dynamic particle system with color gradients</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Fire Trail" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Fire Trail System</h3>
+                        <p class="text-gray-400 text-sm">Optimized trailing effect with dynamic color</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Magic Circle" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-medium mb-2">Magic Circle VFX</h3>
+                        <p class="text-gray-400 text-sm">Complex particle arrangement with patterns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workflow Tab -->
+        <div id="workflow" class="tab-content">
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-2xl font-bold mb-6">My Workflow</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Modeling Process</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• Initial concept sketching</li>
+                            <li>• Block-out modeling</li>
+                            <li>• High-poly modeling</li>
+                            <li>• UV mapping</li>
+                            <li>• Performance optimization</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Tools & Software</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• Blender</li>
+                            <li>• Roblox Studio</li>
+                            <li>• Adobe Photoshop</li>
+                            <li>• Version control</li>
+                            <li>• Custom tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>Contact me on Discord @xcfgj
+            </p>
+            <p class="mt-2">Portfolio last updated April 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
