@@ -19,7 +19,6 @@
     </style>
 </head>
 <body class="min-h-screen bg-gray-900 text-white">
-    <!-- Header and Nav sections remain unchanged -->
     <header class="bg-gray-800 py-6">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl font-bold mb-2">ImASlavetoModeling</h1>
@@ -47,7 +46,6 @@
     </nav>
 
     <main class="container mx-auto px-4 py-8">
-        <!-- Games Tab remains unchanged -->
         <div id="games" class="tab-content active">
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-gray-800 rounded-lg p-6">
@@ -86,7 +84,6 @@
             </div>
         </div>
 
-        <!-- Models Tab - Updated with GitHub images -->
         <div id="models" class="tab-content">
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-gray-800 rounded-lg overflow-hidden">
@@ -113,7 +110,6 @@
             </div>
         </div>
 
-        <!-- VFX Tab - Updated with GitHub images -->
         <div id="vfx" class="tab-content">
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-gray-800 rounded-lg overflow-hidden">
@@ -140,7 +136,6 @@
             </div>
         </div>
 
-        <!-- Workflow Tab remains unchanged -->
         <div id="workflow" class="tab-content">
             <div class="bg-gray-800 rounded-lg p-6">
                 <h2 class="text-2xl font-bold mb-6">My Workflow</h2>
@@ -184,11 +179,9 @@
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
-                    // Remove active class from all tabs and contents
                     tabs.forEach(t => t.classList.remove('active'));
                     contents.forEach(c => c.classList.remove('active'));
 
-                    // Add active class to clicked tab and corresponding content
                     tab.classList.add('active');
                     document.getElementById(tab.dataset.tab).classList.add('active');
                 });
@@ -197,4 +190,4 @@
     </script>
 </body>
 </html>
-<!-- End of HTML Document -->
+
